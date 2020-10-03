@@ -49,18 +49,18 @@
             "src/Support/helpers.php"
         ],
         "psr-4": {
-            "PragmaRX\\Health\\": "src/"
+            "MajidAlaeinia\\Health\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PragmaRX\\Health\\Tests\\PhpUnit\\": "tests/PhpUnit/"
+            "MajidAlaeinia\\Health\\Tests\\PhpUnit\\": "tests/PhpUnit/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "PragmaRX\\Health\\ServiceProvider"
+                "MajidAlaeinia\\Health\\ServiceProvider"
             ]
         }
     },
