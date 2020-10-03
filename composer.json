@@ -14,9 +14,9 @@
     "license": "BSD-3-Clause",
     "authors": [
         {
-            "name": "Antonio Carlos Ribeiro",
-            "email": "acr@antoniocarlosribeiro.com",
-            "role": "Creator & Designer"
+            "name": "Majid Alaeinia",
+            "email": "alaeinia.majid@gmail.com",
+            "role": "Forker of pragmarx/health"
         }
     ],
     "require": {
