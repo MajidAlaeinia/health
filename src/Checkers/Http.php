@@ -5,7 +5,9 @@ namespace PragmaRX\Health\Checkers;
 use GuzzleHttp\TransferStats;
 use GuzzleHttp\Client as Guzzle;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Str;
 use PragmaRX\Health\Support\Result;
+use Log;
 
 class Http extends Base
 {
@@ -37,12 +39,17 @@ class Http extends Base
     public function check()
     {
         try {
-            $health = [];
-
             foreach ($this->getResourceUrlArray() as $url) {
+                if (Str::contains($url, ' ')) {
+                    $token = Str::after($url, ' ');
+                    $url   = Str::before($url, ' ');
+                } else {
+                    $token = '';
+                }
                 [$healthy, $message] = $this->checkWebPage(
-                    $this->makeUrlWithScheme($url, $this->secure),
-                    $this->secure
+                     $this->makeUrlWithScheme($url, $this->secure),
+                     $token,
+                     $this->secure
                 );
 
                 if (! $healthy) {
@@ -72,54 +79,80 @@ class Http extends Base
         return (array) $this->target->urls;
     }
 
+
+
     /**
-     *  Check web pages.
+     * Check web pages.
      *
-     * @param $url
+     * @param      $url
+     * @param      $token
      * @param bool $ssl
-     * @return mixed
+     *
+     * @return array
      */
-    private function checkWebPage($url, $ssl = false)
+    private function checkWebPage($url, $token, $ssl = false)
     {
-        $success = $this->requestSuccessful($url, $ssl);
+        $success = $this->requestSuccessful($url, $token, $ssl);
 
         return [$success, $success ? '' : $this->getErrorMessage()];
     }
+
+
 
     /**
      * Send an http request and fetch the response.
      *
      * @param $url
+     * @param $token
      * @param $ssl
+     *
      * @return mixed|\Psr\Http\Message\ResponseInterface
-     * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    private function fetchResponse($url, $ssl)
+    private function fetchResponse($url, $token, $ssl)
     {
         $this->url = $url;
 
         return (new Guzzle())->request(
-            'GET',
-            $this->url,
-            $this->getConnectionOptions($ssl)
+             'GET',
+             $this->url,
+             $this->getConnectionOptions($token, $ssl)
         );
     }
+
+
 
     /**
      * Get http connection options.
      *
+     * @param $token
      * @param $ssl
+     *
      * @return array
      */
-    private function getConnectionOptions($ssl)
+    private function getConnectionOptions($token, $ssl)
     {
-        return [
-            'connect_timeout' => $this->getConnectionTimeout(),
-            'timeout' => $this->getConnectionTimeout(),
-            'verify' => $ssl,
-            'on_stats' => $this->onStatsCallback(),
-        ];
+        if ($token) {
+            return [
+                 'connect_timeout' => $this->getConnectionTimeout(),
+                 'timeout' => $this->getConnectionTimeout(),
+                 'verify' => $ssl,
+                 'on_stats' => $this->onStatsCallback(),
+                 'headers' => [
+                      'Accept'        => 'application/json',
+                      'Authorization' => 'Bearer ' . $token,
+                 ],
+            ];
+        } else {
+            return [
+                 'connect_timeout' => $this->getConnectionTimeout(),
+                 'timeout' => $this->getConnectionTimeout(),
+                 'verify' => $ssl,
+                 'on_stats' => $this->onStatsCallback(),
+            ];
+        }
     }
+
+
 
     /**
      * Get the error message.
@@ -131,10 +164,10 @@ class Http extends Base
         $message = $this->target->resource->timeoutMessage;
 
         return sprintf(
-            $message,
-            $this->url,
-            $this->totalTime,
-            $this->getRoundtripTimeout()
+             $message,
+             $this->url,
+             $this->totalTime,
+             $this->getRoundtripTimeout()
         );
     }
 
@@ -168,9 +201,9 @@ class Http extends Base
     private function makeUrlWithScheme($url, $secure)
     {
         return preg_replace(
-            '|^((https?:)?\/\/)?(.*)|',
-            'http'.($secure ? 's' : '').'://\\3',
-            $url
+             '|^((https?:)?\/\/)?(.*)|',
+             'http'.($secure ? 's' : '').'://\\3',
+             $url
         );
     }
 
@@ -186,19 +219,23 @@ class Http extends Base
         };
     }
 
+
+
     /**
      * Send a request and get the result.
      *
      * @param $url
+     * @param $token
      * @param $ssl
+     *
      * @return bool
      * @internal param $response
      */
-    private function requestSuccessful($url, $ssl)
+    private function requestSuccessful($url, $token, $ssl)
     {
         return
-            $this->fetchResponse($url, $ssl)->getStatusCode() == 200 &&
-            ! $this->requestTimedout();
+             $this->fetchResponse($url, $token, $ssl)->getStatusCode() == 200 &&
+             ! $this->requestTimedout();
     }
 
     /**
