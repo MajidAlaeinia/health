@@ -1,8 +1,8 @@
 <?php
 
-namespace PragmaRX\Health\Checkers;
+namespace MajidAlaeinia\Health\Checkers;
 
-use PragmaRX\Health\Support\Result;
+use MajidAlaeinia\Health\Support\Result;
 
 class ServerLoad extends ServerUptime
 {

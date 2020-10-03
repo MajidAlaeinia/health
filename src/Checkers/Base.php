@@ -1,11 +1,11 @@
 <?php
 
-namespace PragmaRX\Health\Checkers;
+namespace MajidAlaeinia\Health\Checkers;
 
-use PragmaRX\Health\Support\Timer;
-use PragmaRX\Health\Support\Result;
-use PragmaRX\Health\Support\Target;
-use PragmaRX\Health\Support\Traits\Database;
+use MajidAlaeinia\Health\Support\Result;
+use MajidAlaeinia\Health\Support\Target;
+use MajidAlaeinia\Health\Support\Timer;
+use MajidAlaeinia\Health\Support\Traits\Database;
 
 abstract class Base implements Contract
 {

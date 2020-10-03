@@ -1,13 +1,13 @@
 <?php
 
-namespace PragmaRX\Health\Checkers;
+namespace MajidAlaeinia\Health\Checkers;
 
-use GuzzleHttp\TransferStats;
 use GuzzleHttp\Client as Guzzle;
+use GuzzleHttp\TransferStats;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use PragmaRX\Health\Support\Result;
 use Log;
+use MajidAlaeinia\Health\Support\Result;
 
 class Http extends Base
 {

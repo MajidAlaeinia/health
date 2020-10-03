@@ -1,5 +1,5 @@
 name: Framework
 abbreviation: frmwrk
-checker: PragmaRX\Health\Checkers\Framework
+checker: MajidAlaeinia\Health\Checkers\Framework
 notify: true
 column_size: 3

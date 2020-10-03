@@ -1,6 +1,6 @@
 <?php
 
-use PragmaRX\Health\Service;
+use MajidAlaeinia\Health\Service;
 
 if (! function_exists('instantiate')) {
     /**

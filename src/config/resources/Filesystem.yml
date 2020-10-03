@@ -1,6 +1,6 @@
 name: Filesystem
 abbreviation: flstm
-checker: PragmaRX\Health\Checkers\Filesystem
+checker: MajidAlaeinia\Health\Checkers\Filesystem
 notify: true
 column_size: 3
 targets:

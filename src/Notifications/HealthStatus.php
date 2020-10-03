@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Health\Notifications;
+namespace MajidAlaeinia\Health\Notifications;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Messages\MailMessage;

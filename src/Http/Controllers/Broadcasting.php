@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Health\Http\Controllers;
+namespace MajidAlaeinia\Health\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;

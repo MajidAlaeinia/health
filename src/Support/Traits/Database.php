@@ -1,9 +1,9 @@
 <?php
 
-namespace PragmaRX\Health\Support\Traits;
+namespace MajidAlaeinia\Health\Support\Traits;
 
 use Illuminate\Support\Str;
-use PragmaRX\Health\Data\Models\HealthCheck;
+use MajidAlaeinia\Health\Data\Models\HealthCheck;
 
 trait Database
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace PragmaRX\Health\Checkers;
+namespace MajidAlaeinia\Health\Checkers;
 
-use DomainException;
 use Carbon\CarbonInterval;
+use DomainException;
 use Illuminate\Support\Str;
-use PragmaRX\Health\Support\Result;
-use PragmaRX\Health\Support\Traits\Database;
+use MajidAlaeinia\Health\Support\Result;
+use MajidAlaeinia\Health\Support\Traits\Database;
 
 class ServerUptime extends Base
 {

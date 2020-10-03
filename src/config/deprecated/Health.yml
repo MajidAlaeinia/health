@@ -1,6 +1,6 @@
 name: General Health State
 abbreviation: hlth
-checker: PragmaRX\Health\Checkers\Health
+checker: MajidAlaeinia\Health\Checkers\Health
 is_global: true
 notify: false
 error_message: "At least one resource failed the health check."

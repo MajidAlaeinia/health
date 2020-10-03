@@ -1,6 +1,6 @@
 name: Latency
 abbreviation: latency
-checker: PragmaRX\Health\Checkers\Ping
+checker: MajidAlaeinia\Health\Checkers\Ping
 notify: true
 binary: "{{ config('health.services.ping.bin') }}"
 error_message:

@@ -1,9 +1,9 @@
 <?php
 
-namespace PragmaRX\Health\Checkers;
+namespace MajidAlaeinia\Health\Checkers;
 
-use PragmaRX\Health\Support\Result;
 use Illuminate\Support\Facades\Redis as IlluminateRedis;
+use MajidAlaeinia\Health\Support\Result;
 
 class Redis extends Base
 {

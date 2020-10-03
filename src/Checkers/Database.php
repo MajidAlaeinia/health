@@ -1,10 +1,10 @@
 <?php
 
-namespace PragmaRX\Health\Checkers;
+namespace MajidAlaeinia\Health\Checkers;
 
 use Illuminate\Support\Facades\DB;
-use PragmaRX\Health\Support\Timer;
-use PragmaRX\Health\Support\Result;
+use MajidAlaeinia\Health\Support\Result;
+use MajidAlaeinia\Health\Support\Timer;
 
 class Database extends Base
 {

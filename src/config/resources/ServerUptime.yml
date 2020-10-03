@@ -1,6 +1,6 @@
 name: ServerUptime
 abbreviation: uptm
-checker: PragmaRX\Health\Checkers\ServerUptime
+checker: MajidAlaeinia\Health\Checkers\ServerUptime
 column_size: 3
 notify: true
 error_message:

@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Health\Events;
+namespace MajidAlaeinia\Health\Events;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
 

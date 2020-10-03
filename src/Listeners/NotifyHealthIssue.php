@@ -1,12 +1,12 @@
 <?php
 
-namespace PragmaRX\Health\Listeners;
+namespace MajidAlaeinia\Health\Listeners;
 
+use Illuminate\Support\Facades\Notification;
+use MajidAlaeinia\Health\Events\RaiseHealthIssue;
+use MajidAlaeinia\Health\Notifications\HealthStatus;
 use ReflectionClass;
 use ReflectionException;
-use Illuminate\Support\Facades\Notification;
-use PragmaRX\Health\Events\RaiseHealthIssue;
-use PragmaRX\Health\Notifications\HealthStatus;
 
 class NotifyHealthIssue
 {

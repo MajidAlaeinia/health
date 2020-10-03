@@ -1,8 +1,8 @@
 <?php
 
-namespace PragmaRX\Health\Support;
+namespace MajidAlaeinia\Health\Support;
 
-use \SebastianBergmann\Timer\Timer as SBTimer;
+use SebastianBergmann\Timer\Timer as SBTimer;
 
 class Timer
 {

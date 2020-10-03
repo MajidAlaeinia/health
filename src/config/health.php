@@ -152,7 +152,7 @@ return [
 
         'max_records' => 30,
 
-        'model' => PragmaRX\Health\Data\Models\HealthCheck::class,
+        'model' => MajidAlaeinia\Health\Data\Models\HealthCheck::class,
     ],
 
     'services' => [
@@ -215,7 +215,7 @@ return [
 
         'channels' => ['mail', 'slack'], // mail, slack
 
-        'notifier' => 'PragmaRX\Health\Notifications\HealthStatus',
+        'notifier' => 'MajidAlaeinia\Health\Notifications\HealthStatus',
     ],
 
     'alert' => [
@@ -263,7 +263,7 @@ return [
     'routes' => [
         'prefix' => $route_prefix = '/health',
 
-        'namespace' => $namespace = 'PragmaRX\Health\Http\Controllers\Health',
+        'namespace' => $namespace = 'MajidAlaeinia\Health\Http\Controllers\Health',
 
         'notification' => 'pragmarx.health.panel',
 

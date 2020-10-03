@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Health\Support;
+namespace MajidAlaeinia\Health\Support;
 
 class Result
 {

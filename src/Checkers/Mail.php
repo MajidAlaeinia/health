@@ -1,10 +1,10 @@
 <?php
 
-namespace PragmaRX\Health\Checkers;
+namespace MajidAlaeinia\Health\Checkers;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Mail as IlluminateMail;
-use PragmaRX\Health\Support\Result;
+use MajidAlaeinia\Health\Support\Result;
 
 class Mail extends Base
 {

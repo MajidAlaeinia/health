@@ -5,13 +5,13 @@ namespace MajidAlaeinia\Health;
 use Event;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
-use PragmaRX\Health\Console\Commands as ConsoleCommands;
-use PragmaRX\Health\Events\RaiseHealthIssue;
-use PragmaRX\Health\Listeners\NotifyHealthIssue;
-use PragmaRX\Health\Support\Cache;
-use PragmaRX\Health\Support\ResourceChecker;
-use PragmaRX\Health\Support\ResourceLoader;
-use PragmaRX\Health\Support\Traits\Routing;
+use MajidAlaeinia\Health\Console\Commands as ConsoleCommands;
+use MajidAlaeinia\Health\Events\RaiseHealthIssue;
+use MajidAlaeinia\Health\Listeners\NotifyHealthIssue;
+use MajidAlaeinia\Health\Support\Cache;
+use MajidAlaeinia\Health\Support\ResourceChecker;
+use MajidAlaeinia\Health\Support\ResourceLoader;
+use MajidAlaeinia\Health\Support\Traits\Routing;
 use PragmaRX\Yaml\Package\Yaml;
 
 class ServiceProvider extends IlluminateServiceProvider

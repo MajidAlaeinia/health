@@ -1,6 +1,6 @@
 name: MySql
 abbreviation: msql
-checker: PragmaRX\Health\Checkers\Process
+checker: MajidAlaeinia\Health\Checkers\Process
 column_size: 3
 notify: true
 targets:

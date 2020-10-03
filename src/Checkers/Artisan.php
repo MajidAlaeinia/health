@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Health\Checkers;
+namespace MajidAlaeinia\Health\Checkers;
 
 use Illuminate\Support\Facades\Artisan as IlluminateArtisan;
 

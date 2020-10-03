@@ -1,6 +1,6 @@
 name: S3
 abbreviation: s3
-checker: PragmaRX\Health\Checkers\CloudStorage
+checker: MajidAlaeinia\Health\Checkers\CloudStorage
 notify: true
 column_size: 3
 error_message: "Amazon S3 connection is failing."

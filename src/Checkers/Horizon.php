@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Health\Checkers;
+namespace MajidAlaeinia\Health\Checkers;
 
 use Laravel\Horizon\Contracts\MasterSupervisorRepository;
 
@@ -9,7 +9,7 @@ class Horizon extends Base
     /**
      * Check resource.
      *
-     * @return \PragmaRX\Health\Support\Result
+     * @return \MajidAlaeinia\Health\Support\Result
      */
     public function check()
     {

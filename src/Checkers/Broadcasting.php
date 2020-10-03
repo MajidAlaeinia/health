@@ -1,12 +1,12 @@
 <?php
 
-namespace PragmaRX\Health\Checkers;
+namespace MajidAlaeinia\Health\Checkers;
 
 use Carbon\Carbon;
-use PragmaRX\Health\Support\Result;
-use PragmaRX\Health\Events\HealthPing;
-use PragmaRX\Health\Support\Traits\Routing;
-use PragmaRX\Health\Support\Traits\Database;
+use MajidAlaeinia\Health\Events\HealthPing;
+use MajidAlaeinia\Health\Support\Result;
+use MajidAlaeinia\Health\Support\Traits\Database;
+use MajidAlaeinia\Health\Support\Traits\Routing;
 
 class Broadcasting extends Base
 {

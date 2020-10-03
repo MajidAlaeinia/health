@@ -1,6 +1,6 @@
 name: Mail
 abbreviation: ml
-checker: PragmaRX\Health\Checkers\Mail
+checker: MajidAlaeinia\Health\Checkers\Mail
 notify: true
 column_size: 3
 targets:

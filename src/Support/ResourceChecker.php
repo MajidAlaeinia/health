@@ -1,10 +1,10 @@
 <?php
 
-namespace PragmaRX\Health\Support;
+namespace MajidAlaeinia\Health\Support;
 
 use Exception;
 use Illuminate\Support\Collection;
-use PragmaRX\Health\Support\Traits\HandleExceptions;
+use MajidAlaeinia\Health\Support\Traits\HandleExceptions;
 
 class ResourceChecker
 {

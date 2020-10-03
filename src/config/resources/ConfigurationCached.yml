@@ -1,6 +1,6 @@
 name: Configuration Cached
 abbreviation: cfgcch
-checker: PragmaRX\Health\Checkers\Expression
+checker: MajidAlaeinia\Health\Checkers\Expression
 notify: true
 column_size: 3
 error_message: "Configuration is not cached"

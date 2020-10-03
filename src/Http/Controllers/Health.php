@@ -1,10 +1,10 @@
 <?php
 
-namespace PragmaRX\Health\Http\Controllers;
+namespace MajidAlaeinia\Health\Http\Controllers;
 
-use PragmaRX\Health\Service;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\File;
+use MajidAlaeinia\Health\Service;
 
 class Health extends Controller
 {

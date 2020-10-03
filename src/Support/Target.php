@@ -1,12 +1,12 @@
 <?php
 
-namespace PragmaRX\Health\Support;
+namespace MajidAlaeinia\Health\Support;
 
-use JsonSerializable;
-use Ramsey\Uuid\Uuid;
-use PragmaRX\Health\Support\Traits\ToArray;
 use Illuminate\Database\Eloquent\Collection;
-use PragmaRX\Health\Support\Traits\ImportProperties;
+use JsonSerializable;
+use MajidAlaeinia\Health\Support\Traits\ImportProperties;
+use MajidAlaeinia\Health\Support\Traits\ToArray;
+use Ramsey\Uuid\Uuid;
 
 class Target implements JsonSerializable
 {

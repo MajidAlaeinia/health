@@ -1,6 +1,6 @@
 name: Packages up to date
 abbreviation: pkgupdtd
-checker: PragmaRX\Health\Checkers\Composer
+checker: MajidAlaeinia\Health\Checkers\Composer
 notify: true
 binary: "{{ config('health.services.composer.bin') }}"
 command: "outdated --format=json --minor-only"

@@ -1,6 +1,6 @@
 name: LocalStorage
 abbreviation: lclstrg
-checker: PragmaRX\Health\Checkers\CloudStorage
+checker: MajidAlaeinia\Health\Checkers\CloudStorage
 notify: true
 error_message: "Cloud storage is not retrieving files correctly."
 column_size: 3

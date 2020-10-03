@@ -1,6 +1,6 @@
 name: Directory Permissions
 abbreviation: dirperm
-checker: PragmaRX\Health\Checkers\Writable
+checker: MajidAlaeinia\Health\Checkers\Writable
 notify: true
 column_size: 3
 error_message: "%s is not writable"

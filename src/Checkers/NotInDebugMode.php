@@ -1,11 +1,11 @@
 <?php
 
-namespace PragmaRX\Health\Checkers;
+namespace MajidAlaeinia\Health\Checkers;
 
-use DomainException;
 use Carbon\CarbonInterval;
+use DomainException;
 use Illuminate\Support\Str;
-use PragmaRX\Health\Support\Result;
+use MajidAlaeinia\Health\Support\Result;
 
 class NotInDebugMode extends Base
 {

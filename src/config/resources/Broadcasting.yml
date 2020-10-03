@@ -1,6 +1,6 @@
 name: Broadcasting
 abbreviation: brdc
-checker: PragmaRX\Health\Checkers\Broadcasting
+checker: MajidAlaeinia\Health\Checkers\Broadcasting
 notify: true
 column_size: 3
 error_message:
@@ -14,6 +14,6 @@ targets:
       routes:
         pragmarx.health.broadcasting.callback:
           uri: "/health/broadcasting/callback/{secret}"
-          controller: PragmaRX\Health\Http\Controllers\Broadcasting
+          controller: MajidAlaeinia\Health\Http\Controllers\Broadcasting
           action: callback
       save_to: "{{ storage_path('app') }}/broadcasting.json"

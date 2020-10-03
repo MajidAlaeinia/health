@@ -1,9 +1,9 @@
 <?php
 
-namespace PragmaRX\Health;
+namespace MajidAlaeinia\Health;
 
-use PragmaRX\Health\Support\Cache;
-use PragmaRX\Health\Support\ResourceChecker;
+use MajidAlaeinia\Health\Support\Cache;
+use MajidAlaeinia\Health\Support\ResourceChecker;
 
 class Service
 {

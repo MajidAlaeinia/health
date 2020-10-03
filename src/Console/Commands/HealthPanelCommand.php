@@ -1,9 +1,9 @@
 <?php
 
-namespace PragmaRX\Health\Console\Commands;
+namespace MajidAlaeinia\Health\Console\Commands;
 
-use PragmaRX\Health\Commands;
 use Illuminate\Console\Command;
+use MajidAlaeinia\Health\Commands;
 
 class HealthPanelCommand extends Command
 {

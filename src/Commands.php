@@ -1,10 +1,10 @@
 <?php
 
-namespace PragmaRX\Health;
+namespace MajidAlaeinia\Health;
 
-use Illuminate\Support\Str;
 use Illuminate\Console\Command;
-use PragmaRX\Health\Service as HealthService;
+use Illuminate\Support\Str;
+use MajidAlaeinia\Health\Service as HealthService;
 
 class Commands
 {

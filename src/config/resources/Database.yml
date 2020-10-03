@@ -1,6 +1,6 @@
 name: Database
 abbreviation: db
-checker: PragmaRX\Health\Checkers\Database
+checker: MajidAlaeinia\Health\Checkers\Database
 notify: true
 column_size: 3
 targets:

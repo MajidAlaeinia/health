@@ -1,10 +1,10 @@
 <?php
 
-namespace PragmaRX\Health\Checkers;
+namespace MajidAlaeinia\Health\Checkers;
 
 use Illuminate\Queue\Worker;
 use Illuminate\Queue\WorkerOptions;
-use PragmaRX\Health\Support\Result;
+use MajidAlaeinia\Health\Support\Result;
 
 class Queue extends Base
 {

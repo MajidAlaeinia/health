@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Health\Support\Traits;
+namespace MajidAlaeinia\Health\Support\Traits;
 
 use Illuminate\Support\Str;
 

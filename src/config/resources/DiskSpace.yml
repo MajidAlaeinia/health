@@ -1,6 +1,6 @@
 name: Disk Space
 abbreviation: dskspc
-checker: PragmaRX\Health\Checkers\DiskSpace
+checker: MajidAlaeinia\Health\Checkers\DiskSpace
 notify: true
 column_size: 3
 targets:

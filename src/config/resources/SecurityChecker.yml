@@ -1,6 +1,6 @@
 name: Packages Security Checker
 abbreviation: debug
-checker: PragmaRX\Health\Checkers\SecurityChecker
+checker: MajidAlaeinia\Health\Checkers\SecurityChecker
 notify: true
 column_size: 3
 error_message:

@@ -1,6 +1,6 @@
 name: QueueWorkers
 abbreviation: qwrkrs
-checker: PragmaRX\Health\Checkers\Process
+checker: MajidAlaeinia\Health\Checkers\Process
 notify: true
 column_size: 3
 targets:

@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Health\Data\Models;
+namespace MajidAlaeinia\Health\Data\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

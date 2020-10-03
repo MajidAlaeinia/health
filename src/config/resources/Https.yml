@@ -1,6 +1,6 @@
 name: Https
 abbreviation: https
-checker: PragmaRX\Health\Checkers\Https
+checker: MajidAlaeinia\Health\Checkers\Https
 notify: true
 column_size: 3
 timeout_message: "[TIMEOUT] A request to %s took %s seconds. Timeout is set to %s seconds."

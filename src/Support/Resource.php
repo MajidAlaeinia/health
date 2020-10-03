@@ -1,14 +1,14 @@
 <?php
 
-namespace PragmaRX\Health\Support;
+namespace MajidAlaeinia\Health\Support;
 
-use JsonSerializable;
-use Ramsey\Uuid\Uuid;
-use Illuminate\Support\Str;
 use Illuminate\Support\Collection;
-use PragmaRX\Health\Support\Traits\ToArray;
-use PragmaRX\Health\Events\RaiseHealthIssue;
-use PragmaRX\Health\Support\Traits\ImportProperties;
+use Illuminate\Support\Str;
+use JsonSerializable;
+use MajidAlaeinia\Health\Events\RaiseHealthIssue;
+use MajidAlaeinia\Health\Support\Traits\ImportProperties;
+use MajidAlaeinia\Health\Support\Traits\ToArray;
+use Ramsey\Uuid\Uuid;
 
 class Resource implements JsonSerializable
 {
