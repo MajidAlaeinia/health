@@ -3,7 +3,7 @@
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/pragmarx/health.svg?style=flat-square)](https://packagist.org/packages/pragmarx/health) [![License](https://img.shields.io/badge/license-BSD_3_Clause-brightgreen.svg?style=flat-square)](LICENSE) [![Downloads](https://img.shields.io/packagist/dt/pragmarx/health.svg?style=flat-square)](https://packagist.org/packages/pragmarx/health) [![Code Quality](https://img.shields.io/scrutinizer/g/antonioribeiro/health.svg?style=flat-square)](https://scrutinizer-ci.com/g/antonioribeiro/health/?branch=master) [![Build](https://img.shields.io/scrutinizer/build/g/antonioribeiro/health.svg?style=flat-square)](https://scrutinizer-ci.com/g/antonioribeiro/health/?branch=master) [![Build](https://img.shields.io/scrutinizer/coverage/g/antonioribeiro/health.svg?style=flat-square)](https://scrutinizer-ci.com/g/antonioribeiro/health/?branch=master) [![StyleCI](https://styleci.io/repos/74829244/shield)](https://styleci.io/repos/74829244)
 
-### What does this fork adds to the main package?
+### What does this fork add to the main package?
 This fork of the main package, adds the ability to use http routes with bearer tokens.
 On your `Http.yml` or `Https.yml` file, use this convention:
 ```yaml
