@@ -3,6 +3,20 @@
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/pragmarx/health.svg?style=flat-square)](https://packagist.org/packages/pragmarx/health) [![License](https://img.shields.io/badge/license-BSD_3_Clause-brightgreen.svg?style=flat-square)](LICENSE) [![Downloads](https://img.shields.io/packagist/dt/pragmarx/health.svg?style=flat-square)](https://packagist.org/packages/pragmarx/health) [![Code Quality](https://img.shields.io/scrutinizer/g/antonioribeiro/health.svg?style=flat-square)](https://scrutinizer-ci.com/g/antonioribeiro/health/?branch=master) [![Build](https://img.shields.io/scrutinizer/build/g/antonioribeiro/health.svg?style=flat-square)](https://scrutinizer-ci.com/g/antonioribeiro/health/?branch=master) [![Build](https://img.shields.io/scrutinizer/coverage/g/antonioribeiro/health.svg?style=flat-square)](https://scrutinizer-ci.com/g/antonioribeiro/health/?branch=master) [![StyleCI](https://styleci.io/repos/74829244/shield)](https://styleci.io/repos/74829244)
 
+### What does this fork adds to the main package?
+This fork of the main package, adds the ability to use http routes with bearer tokens.
+On your `Http.yml` or `Https.yml` file, use this convention:
+```yaml
+targets:
+  - default:
+      urls:
+        - '{{ config("app.url") }}'
+        - http://google.com
+        - http://some-route.with/v2/bearer/token/needed {token}
+```
+That's it.
+
+
 This package checks if the application resources are running as they should and creates a service status panel. It has the following main points:
 
 - Highly extensible and configurable: you can create new checkers and notifiers very easily, and you can virtually change everything on it.
@@ -184,17 +198,17 @@ Returns a json with information about a particular service:
 
 Use Composer to install it:
 
-    composer require pragmarx/health
+    composer require majidalaeinia/health:dev-master
 
 ## Installing on Laravel
 
 Add the Service Provider to your `config/app.php`:
 
-    PragmaRX\Health\ServiceProvider::class,
+    MajidAlaeinia\Health\ServiceProvider::class,
 
 ## Publish config and views
 
-    php artisan vendor:publish --provider="PragmaRX\Health\ServiceProvider"
+    php artisan vendor:publish --provider="MajidAlaeinia\Health\ServiceProvider"
 
 ## Hit The Health Panel
 
