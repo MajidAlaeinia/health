@@ -46,7 +46,7 @@ return [
         */
         'enabled' => [
             'AppKey',
-            // 'Broadcasting',
+            'Broadcasting',
             'Cache',
             'ConfigurationCached',
             'Database',
@@ -58,8 +58,8 @@ return [
             'EnvExists',
             'Filesystem',
             'Framework',
-            // 'Horizon',
-            // 'Http',
+            'Horizon',
+            'Http',
             'Https',
             'LaravelServices',
             'Latency',
