@@ -88,7 +88,7 @@ class ServiceProvider extends IlluminateServiceProvider
                     'health/resources/'
                 ),
             ],
-            'config'
+            'health-config'
         );
 
         $this->publishes(
@@ -97,7 +97,7 @@ class ServiceProvider extends IlluminateServiceProvider
                     'views/vendor/pragmarx/health/'
                 ),
             ],
-            'views'
+            'health-views'
         );
 
         $this->publishes(
@@ -106,7 +106,7 @@ class ServiceProvider extends IlluminateServiceProvider
                     'migrations'
                 ),
             ],
-            'migrations'
+            'health-migrations'
         );
     }
 
