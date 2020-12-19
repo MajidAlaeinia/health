@@ -273,7 +273,7 @@ return [
                 'name' => 'pragmarx.health.panel',
                 'action' => "{$namespace}@panel",
                 'middleware' => [
-                    /*'auth.basic'*/
+                    'auth.basic'
                 ],
             ],
 
@@ -281,49 +281,63 @@ return [
                 'uri' => "{$route_prefix}/check",
                 'name' => 'pragmarx.health.check',
                 'action' => "{$namespace}@check",
-                'middleware' => [],
+                'middleware' => [
+                     'auth.basic'
+                ],
             ],
 
             [
                 'uri' => "{$route_prefix}/string",
                 'name' => 'pragmarx.health.string',
                 'action' => "{$namespace}@string",
-                'middleware' => [],
+                'middleware' => [
+                     'auth.basic'
+                ],
             ],
 
             [
                 'uri' => "{$route_prefix}/resources",
                 'name' => 'pragmarx.health.resources.all',
                 'action' => "{$namespace}@allResources",
-                'middleware' => [],
+                'middleware' => [
+                     'auth.basic'
+                ],
             ],
 
             [
                 'uri' => "{$route_prefix}/resources/{slug}",
                 'name' => 'pragmarx.health.resources.get',
                 'action' => "{$namespace}@getResource",
-                'middleware' => [],
+                'middleware' => [
+                     'auth.basic'
+                ],
             ],
 
             [
                 'uri' => "{$route_prefix}/assets/css/app.css",
                 'name' => 'pragmarx.health.assets.css',
                 'action' => "{$namespace}@assetAppCss",
-                'middleware' => [],
+                'middleware' => [
+                     'auth.basic'
+                ],
             ],
 
             [
                 'uri' => "{$route_prefix}/assets/js/app.js",
                 'name' => 'pragmarx.health.assets.js',
                 'action' => "{$namespace}@assetAppJs",
-                'middleware' => [],
+                'middleware' => [
+                     'auth.basic'
+                ],
             ],
 
             [
                 'uri' => "{$route_prefix}/config",
                 'name' => 'pragmarx.health.config',
                 'action' => "{$namespace}@config",
-                'middleware' => [],
+                'middleware' => [
+                     'auth.basic'
+                ],
             ],
         ],
     ],
