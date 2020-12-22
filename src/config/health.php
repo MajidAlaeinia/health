@@ -273,7 +273,7 @@ return [
                 'name' => 'pragmarx.health.panel',
                 'action' => "{$namespace}@panel",
                 'middleware' => [
-                    'auth.basic:web'
+                    'auth.basic:admin'
                 ],
             ],
 
@@ -282,7 +282,7 @@ return [
                 'name' => 'pragmarx.health.check',
                 'action' => "{$namespace}@check",
                 'middleware' => [
-                     'auth.basic:web'
+                     'auth.basic:admin'
                 ],
             ],
 
@@ -291,7 +291,7 @@ return [
                 'name' => 'pragmarx.health.string',
                 'action' => "{$namespace}@string",
                 'middleware' => [
-                     'auth.basic:web'
+                     'auth.basic:admin'
                 ],
             ],
 
@@ -300,7 +300,7 @@ return [
                 'name' => 'pragmarx.health.resources.all',
                 'action' => "{$namespace}@allResources",
                 'middleware' => [
-                     'auth.basic:web'
+                     'auth.basic:admin'
                 ],
             ],
 
@@ -309,7 +309,7 @@ return [
                 'name' => 'pragmarx.health.resources.get',
                 'action' => "{$namespace}@getResource",
                 'middleware' => [
-                     'auth.basic:web'
+                     'auth.basic:admin'
                 ],
             ],
 
@@ -318,7 +318,7 @@ return [
                 'name' => 'pragmarx.health.assets.css',
                 'action' => "{$namespace}@assetAppCss",
                 'middleware' => [
-                     'auth.basic:web'
+                     'auth.basic:admin'
                 ],
             ],
 
@@ -327,7 +327,7 @@ return [
                 'name' => 'pragmarx.health.assets.js',
                 'action' => "{$namespace}@assetAppJs",
                 'middleware' => [
-                     'auth.basic:web'
+                     'auth.basic:admin'
                 ],
             ],
 
@@ -336,7 +336,7 @@ return [
                 'name' => 'pragmarx.health.config',
                 'action' => "{$namespace}@config",
                 'middleware' => [
-                     'auth.basic:web'
+                     'auth.basic:admin'
                 ],
             ],
         ],
